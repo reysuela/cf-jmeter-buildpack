@@ -58,4 +58,3 @@ if __name__ == '__main__':
     index = sys.argv[4]
     install_jmeter(os.path.join(build_path, "jmeter"))
     sys.exit(0)
-
