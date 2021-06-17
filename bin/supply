@@ -19,7 +19,7 @@ def dlfile(url, install_dir):
 
         if not os.path.isfile(dlfile_fullpath):
             return None
-        print("jmeter tgz file saved in {1}".format(dlfile_fullpath))
+        print("jmeter tgz file saved in {0}".format(dlfile_fullpath))
 
     except urllib2.HTTPError, e:
         print "HTTP Error:", e.code, url
