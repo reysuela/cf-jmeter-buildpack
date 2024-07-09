@@ -70,4 +70,10 @@
 #    index = sys.argv[4]
 #    install_jmeter(os.path.join(build_path, "jmeter"))
 #    sys.exit(0)
+
+mkdir -p "${BUILD_PATH}/.profile.d/"
+cat > "${BUILD_PATH}/.profile.d/defaults.sh" <<SH
+export TEST_VARIABLE="hello"
+SH
+
 exit 0
